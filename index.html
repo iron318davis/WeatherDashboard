@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <script src="https://kit.fontawesome.com/340330cae2.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="jumbotron">
+        <h1>Weather Dashboard</h1>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-4 searchsection">
+                <h2>Search for a city:</h2>
+                <form role="form">
+                    <div class="d-flex textsubmit">
+                        <input type="text" class="form-control searchtext" placeholder="City">
+                        <button class="btn btn-primary fas fa-search" id="searchbutton"></button>
+                    </div>
+                    <div class="searchsectionbuttons"></div>
+                </form>
+            </div>
+            <div class="col-8">
+                <div class="row citydetails">
+                    <div class="col-12">
+                        <div class="row CityDeets"></div>
+                        <div class="row temp"></div>
+                        <div class="row humid"></div>
+                        <div class="row windspeed"></div>
+                        <div class="row uvindex"><span id="uvindexcolor"></span></div>
+                    </div>
+                </div>
+                <div class="row forecast">
+                    <div class="col-12"><h2 class="5DayForecast"></h2></div>
+                    <div class="col day1" style="max-width: 150px;"></div>
+                    <div class="col day2" style="max-width: 150px;"></div>
+                    <div class="col day3" style="max-width: 150px;"></div>
+                    <div class="col day4" style="max-width: 150px;"></div>
+                    <div class="col day5" style="max-width: 150px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
